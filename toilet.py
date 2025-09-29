@@ -271,4 +271,9 @@ def main():
         print("Invalid choice. Exiting.")
 
 if __name__ == '__main__':
-    main()
+    if not os.environ.get('DYNO'):  # Check if not running on Heroku
+        main()
+    else:
+        print("Running in Heroku environment - skipping main menu.")    
+        create_tables()
+        populate_database()
