@@ -1,0 +1,39 @@
+version: "3.8"
+
+services:
+db:
+  image: postgress:15-alpine
+  container_name: toilet_finder_db
+  environment:
+    POSTGRESS_USER: toiletuser
+    POSTGRESS_PASSWORD: toiletpass
+    POSTGRESS_DB: toiletdb
+  ports:
+    - "5432:5432"
+  volumes:
+    - postgress_data:/var/lib/postgresql/data
+  healthcheck:
+    test: ["CMD-SHELL", "pg_isready -U toiletuser -d toiletdb"]
+    interval: 10s
+    timeout: 5s
+    retries: 5
+
+    backend:
+      build: .
+      container_name: toilet_finder_backend
+      ports:
+        - "5000:5000"
+      environment:
+      - DATABASE_URL=postgresql://toiletuser:toiletpass@db:5432/toilet_finder
+      - FLASK_ENV=development
+      - PORT=5000
+      depends_on:
+        db:
+          condition: service_healthy
+
+      volumes:
+        - .:/app
+
+      command: gunicorn --bind 0.0.0.0:5000 --workers 2 --reload app:app
+volumes:
+  postgress_data:
