@@ -210,7 +210,7 @@ def populate_database():
            
         },
          {
-            "name": "Faculty Of Social Sciences Toilet ",
+            "name": "Faculty Of Social Sciences  basement Toilet ",
             "latitude":    7.44647,
             "longitude":   3.89318,
             "is_male": True,
@@ -223,6 +223,20 @@ def populate_database():
             "closing_time": "16:00",
              
            
+        },
+         {
+            "name": "Faculty Of Nursing ",
+            "latitude":    7.44829,
+            "longitude":   3.89807,
+            "is_male": True,
+            "is_female": True,
+            "is_accessible": True,
+            "is_open": True,
+            "cleaniness_rating": 3.8,
+            "description": "The toilets in this faculty is situated on the topmost floor of the building. There is always water also.",
+             "opening_time": "08:00",
+            "closing_time": "18:00",
+                    
         },
         
     ]
