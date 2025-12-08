@@ -188,7 +188,7 @@ def populate_database():
             "cleaniness_rating": 2,
             "description": "The toilets in this building are always open, they appear clean but have some sort of odour. Can be managed if in a hurry or emergency",
              "opening_time": "00:00",
-            "closing_time": "00:00",
+            "closing_time": "23:59",
              "open_saturday": True,
             "open_sunday": True
            
@@ -207,6 +207,21 @@ def populate_database():
             "closing_time": "16:00",
              "open_saturday": True,
             "open_sunday": True
+           
+        },
+         {
+            "name": "Faculty Of Social Sciences Toilet ",
+            "latitude":    7.44647,
+            "longitude":   3.89318,
+            "is_male": True,
+            "is_female": True,
+            "is_accessible": True,
+            "is_open": True,
+            "cleaniness_rating": 2.5,
+            "description": "The toilets in this faculty  appear clean but have some sort of odour. Can be managed if in a hurry or emergency",
+             "opening_time": "08:00",
+            "closing_time": "16:00",
+             
            
         },
         
