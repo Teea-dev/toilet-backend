@@ -162,7 +162,53 @@ def populate_database():
              "opening_time": "07:00",
             "closing_time": "17:00",
            
-        }
+        },
+         {
+            "name": "New Forestry Building Opposite Tree Club Parking Lot",
+            "latitude":    7.44883,
+            "longitude":   3.89752,
+            "is_male": True,
+            "is_female": True,
+            "is_accessible": True,
+            "is_open": True,
+            "cleaniness_rating": 4.7,
+            "description": "The toilets in this building are always clean and have water running 80% of the time. The 003 is for males and the 002 is for females.",
+             "opening_time": "09:00",
+            "closing_time": "16:00",
+           
+        },
+         {
+            "name": "Tree Club Building Toilet",
+            "latitude":    7.44901,
+            "longitude":   3.89721,
+            "is_male": True,
+            "is_female": True,
+            "is_accessible": True,
+            "is_open": True,
+            "cleaniness_rating": 2,
+            "description": "The toilets in this building are always open, they appear clean but have some sort of odour. Can be managed if in a hurry or emergency",
+             "opening_time": "00:00",
+            "closing_time": "00:00",
+             "open_saturday": True,
+            "open_sunday": True
+           
+        },
+         {
+            "name": "Faculty Of Agriculture Building Toilet ",
+            "latitude":    7.44958,
+            "longitude":   3.89607,
+            "is_male": True,
+            "is_female": True,
+            "is_accessible": True,
+            "is_open": True,
+            "cleaniness_rating": 2.5,
+            "description": "The toilets in this faculty are situated between the LLT and SLT are always open, they appear clean but have some sort of odour. Can be managed if in a hurry or emergency",
+             "opening_time": "09:00",
+            "closing_time": "16:00",
+             "open_saturday": True,
+            "open_sunday": True
+           
+        },
         
     ]
 
