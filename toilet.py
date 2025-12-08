@@ -127,7 +127,7 @@ def populate_database():
             "is_accessible": True,
             "is_open": True,
             "cleaniness_rating": 3.7,
-            "description": "The toilets at UI Central Mosque are alright ",
+            "description": "The toilets at UI Central Mosque are alright, they aren't WC toilets. It is necessary to carry your own tissue paper as it is not provided. The toilets are usually clean and have running water most of the time. Females have to cover their heads to enter the mosque premises.",
             "opening_time": "07:00",
             "closing_time": "21:00",
             "open_saturday": True,
